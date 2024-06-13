@@ -18,6 +18,8 @@ body {
 
 header {
   padding: 1em;
+  margin: 0 30px;
+  padding: 2em;
 }
 
 nav {

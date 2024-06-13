@@ -99,11 +99,19 @@ main {
   flex: 1;
   padding: 1em;
 }
+#Home .back-img {
+  left: 20%;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  width: 30%;
+  z-index: -1;
+}
 
 #Home h1 {
   font-size: 60px;
   font-weight: bolder;
-  line-height: 1.0;
+  line-height: 1;
 }
 
 #Home p {
@@ -114,6 +122,7 @@ main {
 #Home .actions {
   display: flex;
   align-items: center;
+  
 }
 
 #Home .actions button {
@@ -140,6 +149,7 @@ main {
   font-weight: 500;
   padding: 30px;
   cursor: pointer;
+  gap:10px
 }
 
 .watch-video i {
@@ -151,10 +161,9 @@ main {
   color: var(--custom-color);
 }
 
-.watch-video h2{
-font-size: 20px; 
-font-weight: 600; 
-
+.watch-video h2 {
+  font-size: 20px;
+  font-weight: 600;
 }
 /* colour background */
 
@@ -167,6 +176,7 @@ font-weight: 600;
   align-items: flex-end;
   justify-content: flex-end;
 }
+
 .box {
   color: var(--primary-color);
   background-color: var(--custom-color);
@@ -192,6 +202,13 @@ font-weight: 600;
   font-weight: 600;
   margin: 20px;
 }
+
+#Features {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 60px;
+  padding: 2em;
+}
 #Features img {
   color: transparent;
   width: auto;
@@ -209,7 +226,7 @@ font-weight: 600;
 #Features h1 {
   font-size: 48px;
   font-weight: 800;
-  line-height: 48px;
+  line-height: 80px;
 }
 #Features h4 {
   font-size: 18px;
@@ -220,6 +237,47 @@ font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: #808080;
+}
+
+#Features .cube {
+  color: rgb(255, 85, 85);
+  height: 20px;
+  width: 20px;
+  margin-left: 1px;
+}
+#Features .img-contain {
+  display: flex;
+  gap: 8px;
+}
+/* Advantages */
+
+#Advantages{
+  display: flex; justify-content: space-between; margin: 0 60px;
+  padding: 2em;
+}
+.Advantages-div{
+  padding: 9.8rem 0;
+}
+#Advantages h3{
+  font-size: 18px; font-weight: 500; line-height: 28px; letter-spacing: 1.8px; color:#ff5555
+}
+#Advantages h4{
+  font-size: 24px; font-weight: 600; line-height: 42px;
+}
+#Advantages h1{
+font-size: 48px; font-weight: 800; line-height: 80px;}
+#Advantages p{
+  font-size: 16px; line-height: 24px;
+}
+
+/* section 4 */
+
+#section4{
+  display: flex; justify-content: space-between; margin: 0 60px;
+  padding: 2em;
+}
+#section4 h1{
+  font-size: 28px; font-weight: 600; line-height: 80px;
 }
 /* image section */
 .background-section {
@@ -234,10 +292,33 @@ font-weight: 600;
   margin: 0 auto;
   border-radius: 8px;
 }
+.background-section .button-with-image {
+  padding: 12px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  background: var(--primary-color);
+  color: var(--indicator-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.background-section .button-with-image img {
+  margin-left: 10px;
+  width: 35px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+}
+
+.background-section .button-with-image:hover {
+  background-color: #ff4500;
+}
 
 /* Contact and Links Section */
 #contact-links {
-  display: flex;
+  dmgsplay: flex;
   align-items: flex-start;
   padding: 2em;
 }
